@@ -1,0 +1,39 @@
+<html>
+<table >
+<tr><thcolspan="2"> Login Form </th></tr>
+<tr><td> User Id </td><td><input id=userid></td></tr>
+<tr><td> Password </td><td><input type="password" id=password ></td></tr>
+<tr><td> NAME </td><td><input type="text" id=name ></td></tr>
+<tr><td> EMAIL </td><td><input type="email" id=Email ></td></tr>
+<tr><td> CONTACT </td><td><input type="text" id=Contact ></td></tr>
+<tr><td> DATE OF BIRTH </td><td><input type="date" id=dateofbirth ></td></tr>
+<tr><td> Country </td><td><input type="text" id=Country ></td></tr>
+<tr><td></td><td><input type="button" value="login" onclick=show() ></td></tr>
+</table>
+<p id=p1></p>
+<script>
+function show()
+{
+a=userid.value
+b=password.value
+c=nameid.value
+d=Emailid.value
+e=Contactid.value
+f=dateofbirthid.value
+g=Countryid.value
+x="<table border=1>" 
+x=x+ "<tr><th> User Id <th> Password<th>name<th>Email<th>Contact<th>dateofbirth<th>Country<th>   "
+x= x + "<tr><td> " 
+x=x+ a ,
+x=x + " <td> " + b 
+x=x + " <td> " + c 
+x=x + " <td> " + d 
+x=x + " <td> " + e 
+x=x + " <td> " + f
+x=x + " <td> " + g 
+
+x=x+ "</table>"
+p1.innerHTML = x
+}
+</script>
+</html>
